@@ -1,3 +1,56 @@
+
+# DESCRIPCIÓN DE LA SOLUCIÓN
+
+## Stack
+Como la prueba lo indica, se uso `React` con `Typescript` y `Vite` como bundler y para los estilos se uso `Tailwind`. Para el manejo de estado se opto por usar `Context API` y no una libreria externa, esto ya que no se tiene que hacer fetch de muchos datos ni se manejan estados muy complejos.
+
+Para crear el archivo db.json se le pidio a un agente de IA, gemini que sacara información de los eventos y oferta academica de la pagina de la Universidad Javeriana. Para hacer fetch de la data se uso el servicio de [`My Json server`](https://my-json-server.typicode.com/gilex1x/Javeriana_Lead_-_Events_Manager).
+
+## Ejecutar proyecto
+
+Sigue estos pasos para instalar y levantar el entorno de desarrollo localmente:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   cd Javeriana_Lead_-_Events_Manager
+   ```
+
+2. **Instalar las dependencias:**
+   Como el proyecto utiliza `yarn` (se evidencia por el `yarn.lock`), ejecuta el siguiente comando:
+   ```bash
+   yarn install
+   ```
+   *(Si prefieres usar npm, puedes ejecutar `npm install`)*
+
+3. **Configurar variables de entorno:**
+   Crea un archivo `.env` en la raíz del proyecto y añade la URL del servicio (My Json Server):
+   ```env
+   VITE_SERVICE_URL=https://my-json-server.typicode.com/gilex1x/Javeriana_Lead_-_Events_Manager
+   ```
+
+4. **Levantar el servidor de desarrollo:**
+   Para iniciar la aplicación en modo desarrollo y ver los cambios en tiempo real, ejecuta:
+   ```bash
+   yarn dev
+   ```
+   El servidor se iniciará normalmente en `http://localhost:5173`.
+
+5. **Construir para producción (Build):**
+   Para generar una versión optimizada de la aplicación lista para ser desplegada:
+   ```bash
+   yarn build
+   ```
+
+6. **Previsualizar la versión de producción:**
+   Para comprobar cómo se verá la aplicación una vez construida:
+   ```bash
+   yarn preview
+   ```
+
+---
+
+
 # CONVOCATORIA: DESARROLLADOR FRONTEND
 
 ## PRUEBA TÉCNICA: DASHBOARD DE GESTIÓN DE PROSPECTOS
@@ -36,79 +89,3 @@ Para esta prueba, es obligatorio el uso de las siguientes herramientas:
 4. **Deployment:** Despliega la aplicación en una plataforma gratuita (Vercel, Netlify o GitHub Pages) y adjunta el enlace.
 
 **Nota:** En la Universidad Javeriana valoramos la innovación. Si decides agregar una funcionalidad extra (como modo oscuro, animaciones con Framer Motion, o pruebas unitarias), será tomado en cuenta como un plus en tu calificación.
-
----
-
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
