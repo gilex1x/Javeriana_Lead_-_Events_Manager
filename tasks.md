@@ -2,8 +2,8 @@
 
 ## Requerimientos Funcionales
 
-- [ ] **Visualización de Datos:** Consumir una API REST (JSONPlaceholder o Mockaroo) para listar eventos o programas académicos en formato de cards.
-- [ ] **Filtrado Avanzado:** Implementar un buscador por nombre y un filtro por categoría, que funcione sin recargar la página.
+- [X] **Visualización de Datos:** Consumir una API REST (JSONPlaceholder o Mockaroo) para listar eventos o programas académicos en formato de cards.
+- [X] **Filtrado Avanzado:** Implementar un buscador por nombre y un filtro por categoría, que funcione sin recargar la página.
 - [ ] **Captura de Leads:** Un formulario de inscripción con las siguientes validaciones:
   - [ ] **Email:** Debe ser una estructura válida y, preferiblemente, validar dominio `@javeriana.edu.co`.
   - [ ] **Normalización:** Al enviar, los datos deben transformarse (limpieza de espacios, capitalización) antes de mostrar un mensaje de éxito.
