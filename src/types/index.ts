@@ -10,13 +10,13 @@ export interface BaseItem {
   subcategory?: Subcategory;
 }
 
+export type Item = BaseItem | LeadItem;
 export interface LeadItem{
+  id:number;
   nombre:string;
   email: `${string}@javeriana.edu.co`;
   leadInterest?: Item[];
 }
-
-export type Item = BaseItem;
 
 export interface DatabaseSchema {
   items: Item[];
