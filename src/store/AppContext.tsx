@@ -1,7 +1,8 @@
-import { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
+import { createContext, useContext, useState, useCallback, useMemo } from 'react';
 import type { ReactNode } from 'react';
 import type { Item, LeadItem, Category, Subcategory } from '../types';
 import { getAllItems } from '../services';
+import { useLocalStorage } from '../hooks';
 
 interface AppState {
   items: Item[];
@@ -34,23 +35,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [categoryFilter, setCategoryFilter] = useState<Category | ''>('');
   const [subcategoryFilter, setSubcategoryFilter] = useState<Subcategory | ''>('');
 
-  const [leads, setLeads] = useState<LeadItem[]>(() => {
-    try {
-      const savedLeads = localStorage.getItem('javeriana_leads');
-      return savedLeads ? JSON.parse(savedLeads) : [];
-    } catch (error) {
-      console.error('Error al cargar leads desde localStorage', error);
-      return [];
-    }
-  });
-
-  useEffect(() => {
-    try {
-      localStorage.setItem('javeriana_leads', JSON.stringify(leads));
-    } catch (error) {
-      console.error('Error al guardar leads en localStorage', error);
-    }
-  }, [leads]);
+  const [leads, setLeads] = useLocalStorage<LeadItem[]>('javeriana_leads', []);
 
   const addLead = useCallback((lead: LeadItem) => {
 
