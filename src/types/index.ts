@@ -10,6 +10,11 @@ export interface BaseItem {
   subcategory?: Subcategory;
 }
 
+export interface LeadItem{
+  nombre:string;
+  email: `${string}@javeriana.edu.co`;
+  leadInterest?: Item[];
+}
 
 export type Item = BaseItem;
 
