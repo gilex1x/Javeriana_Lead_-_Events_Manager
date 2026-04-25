@@ -1,4 +1,4 @@
-export type Category = 'event' | 'academic';
+export type Category = 'evento' | 'academico';
 export type Subcategory = 'pregrado' | 'posgrado' | 'educacion continua';
 
 export interface BaseItem {
