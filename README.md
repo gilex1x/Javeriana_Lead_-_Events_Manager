@@ -1,10 +1,25 @@
 
 # DESCRIPCIÓN DE LA SOLUCIÓN
 
-## Stack
-Como la prueba lo indica, se uso `React` con `Typescript` y `Vite` como bundler y para los estilos se uso `Tailwind`. Para el manejo de estado se opto por usar `Context API` y no una libreria externa, esto ya que no se tiene que hacer fetch de muchos datos ni se manejan estados muy complejos.
+## STACK
+Como la prueba lo indica, se uso `React` con `Typescript`, `Vite` como bundler y para los estilos se uso `Tailwind`. Para el manejo de estado se opto por usar `Context API` y no una libreria externa, esto ya que no se tiene que hacer fetch de muchos datos ni se manejan estados muy complejos.
 
-Para crear el archivo db.json se le pidio a un agente de IA, gemini que sacara información de los eventos y oferta academica de la pagina de la Universidad Javeriana. Para hacer fetch de la data se uso el servicio de [`My Json server`](https://my-json-server.typicode.com/gilex1x/Javeriana_Lead_-_Events_Manager).
+Para hacer fetch de la data se uso el servicio de [`My Json server`](https://my-json-server.typicode.com/gilex1x/Javeriana_Lead_-_Events_Manager) el cual lee la información del archivo `db.json` que se encuentra en la raiz del proyecto.
+
+Para el manejo de la información guardada en el localStorage se creo un customHook llamado useLocalStorage, ademas se crearon otros custom hooks para el filtrado de los items y para validar clicks externos en el boton de filtros.
+
+### Adicionales
+- Para poder agregar un Lead se agrego un boton con el icono de `+` en cada uno de los items, boton el cual muestra un formulario para registrar los leads.
+- En el card de cada item también se agrego un contador que muestra la cantidad de leads registrados para cada item.
+
+## USO DE IA
+Se uso gemini-cli, con el modelo gemini-3.1-pro-preview, en algunas partes del proceso para: 
+ - **Uso de iconos**: Para evitar usar librerias de terceros o buscar el codigo en internet.
+ - **Corrección de errores**: Errores que se tuvieron a la hora de hacer uso del custom hook useLocalStorage.
+ - **La creación de la data**: Para crear el `db.json` haciendo que la IA busque la pagina oficial de la universidad Javeriana eventos y oferta academica.
+ - **Corrección de estilos**: Para corregir estilos que no estaban alineados con un diseño responsivo.
+
+**Nota**: Siempre se reviso, y en algunos casos se corrigio, el codigo entregado por parte de la IA.
 
 ## Ejecutar proyecto
 
@@ -47,6 +62,9 @@ Sigue estos pasos para instalar y levantar el entorno de desarrollo localmente:
    ```bash
    yarn preview
    ```
+6. **Versión de producción online:**
+   Puedes ver el proyecto en linea desplegado en netlify [aquí](https://javerianaleadsystem.netlify.app/)
+
 
 ---
 
