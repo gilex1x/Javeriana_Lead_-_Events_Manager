@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useAppContext } from '../../store';
 import type { BaseItem, LeadItem } from '../../types';
+import { useClickOutside } from '../../hooks';
 
 interface LeadFormProps {
     isOpen: boolean;
@@ -13,6 +14,9 @@ export const LeadForm = ({ isOpen, onClose, item }: LeadFormProps): React.ReactE
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
     const [error, setError] = useState('');
+    const modalRef = useRef<HTMLDivElement>(null);
+
+    useClickOutside(modalRef, onClose);
 
     if (!isOpen) return null;
 
@@ -41,7 +45,7 @@ export const LeadForm = ({ isOpen, onClose, item }: LeadFormProps): React.ReactE
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
-            <div className="bg-white rounded-lg shadow-xl w-full max-w-md overflow-hidden">
+            <div ref={modalRef} className="bg-white rounded-lg shadow-xl w-full max-w-md overflow-hidden">
                 <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
                     <h2 className="text-xl font-semibold text-gray-800">Registrar Lead</h2>
                     <button onClick={onClose} className="text-gray-500 hover:text-gray-700 focus:outline-none">
