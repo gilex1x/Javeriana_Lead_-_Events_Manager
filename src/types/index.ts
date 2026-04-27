@@ -5,7 +5,6 @@ export interface BaseItem {
   id: number;
   nombre: string;
   descripcion: string;
-  imagen: string | null;
   categoria: Category;
   subcategory?: Subcategory;
 }

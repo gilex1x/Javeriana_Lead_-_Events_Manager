@@ -5,7 +5,6 @@
       "nombre": "Expojaveriana Posgrados 2026",
       "descripcion": "La Dirección de Mercadeo organiza este espacio, en el cual se presentará la oferta académica de los programas de posgrado de la Universidad Javeriana.",
       "fecha": "15 Abr",
-      "imagen": null,
       "categoria": "evento"
     },
     {
@@ -13,7 +12,6 @@
       "nombre": "Celebración eucarística diaria",
       "descripcion": "Capilla San Francisco Javier, Edificio Pablo VI, costado norte. Lunes a viernes 7:00 a.m., Domingos 11:00 a.m.",
       "fecha": "23 Abr",
-      "imagen": null,
       "categoria": "evento"
     },
     {
@@ -21,7 +19,6 @@
       "nombre": "Fest yo soy",
       "descripcion": "Un encuentro para brindar experiencias y fortalecer el mejoramiento de la salud femenina.",
       "fecha": "25 Abr",
-      "imagen": null,
       "categoria": "evento"
     },
     {
@@ -29,7 +26,6 @@
       "nombre": "Eucaristía Semana de Acogida",
       "descripcion": "Esta eucaristía está destinada para los y las nuevas estudiantes que inician su carrera profesional en la Javeriana.",
       "fecha": "22 Jul",
-      "imagen": null,
       "categoria": "evento"
     },
     {
@@ -37,7 +33,6 @@
       "nombre": "Eucaristía solemnidad de San Ignacio de Loyola",
       "descripcion": "La Comunidad Javeriana está cordialmente invitada a participar en la Eucaristía en la solemnidad de San Ignacio de Loyola, fundador de la Compañía de Jesús.",
       "fecha": "31 Jul",
-      "imagen": null,
       "categoria": "evento"
     },
     {
@@ -45,7 +40,6 @@
       "nombre": "Eucaristía memoria San Pedro Claver",
       "descripcion": "La Comunidad Javeriana está cordialmente invitada a participar en la Eucaristía en memoria de San Pedro Claver, un espacio para unirnos en oración.",
       "fecha": "9 Sep",
-      "imagen": null,
       "categoria": "evento"
     },
     {
@@ -53,7 +47,6 @@
       "nombre": "Eucaristía Día de la Universidad",
       "descripcion": "Fecha en la que celebramos con gratitud un nuevo aniversario de la fundación de nuestra Universidad Javeriana.",
       "fecha": "1 Oct",
-      "imagen": null,
       "categoria": "evento"
     },
     {
@@ -61,7 +54,6 @@
       "nombre": "Francofonía: cooperación y juventud en 2026",
       "descripcion": "El encuentro será un espacio para dialogar sobre el impacto de la Francofonía en el país y las oportunidades de cooperación académica.",
       "fecha": "05 Mar",
-      "imagen": null,
       "categoria": "evento"
     },
     {
@@ -69,7 +61,6 @@
       "nombre": "Arquitectura",
       "descripcion": "Programa de pregrado de la Facultad de Arquitectura y Diseño.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "pregrado"
     },
@@ -78,7 +69,6 @@
       "nombre": "Medicina",
       "descripcion": "Programa de pregrado de la Facultad de Medicina.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "pregrado"
     },
@@ -87,7 +77,6 @@
       "nombre": "Comunicación Social",
       "descripcion": "Programa de pregrado de la Facultad de Comunicación y Lenguaje.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "pregrado"
     },
@@ -96,7 +85,6 @@
       "nombre": "Derecho",
       "descripcion": "Programa de pregrado de la Facultad de Ciencias Jurídicas.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "pregrado"
     },
@@ -105,7 +93,6 @@
       "nombre": "Psicología",
       "descripcion": "Programa de pregrado de la Facultad de Psicología.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "pregrado"
     },
@@ -114,7 +101,6 @@
       "nombre": "Especialización en Gerencia de Proyectos de Diseño",
       "descripcion": "Programa de posgrado de la Facultad de Arquitectura y Diseño.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "posgrado"
     },
@@ -123,7 +109,6 @@
       "nombre": "Maestría en Bioética",
       "descripcion": "Programa de posgrado de la Facultad de Filosofía.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "posgrado"
     },
@@ -132,7 +117,6 @@
       "nombre": "Doctorado en Ingeniería",
       "descripcion": "Programa de posgrado de la Facultad de Ingeniería.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "posgrado"
     },
@@ -141,7 +125,6 @@
       "nombre": "Especialización en Administración de Salud",
       "descripcion": "Programa de posgrado de la Facultad de Ciencias Económicas y Administrativas.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "posgrado"
     },
@@ -150,7 +133,6 @@
       "nombre": "Maestría en Administración - MBA Profesional",
       "descripcion": "Programa de posgrado de la Facultad de Ciencias Económicas y Administrativas.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "posgrado"
     },
@@ -159,7 +141,6 @@
       "nombre": "Técnico Laboral por Competencias en Auxiliar en Salud Oral",
       "descripcion": "Programa de formación técnica de la Facultad de Odontología.",
       "modalidad": "Presencial",
-      "imagen": null,
       "categoria": "academico",
       "subcategoria": "educacion continua"
     }
