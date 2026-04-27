@@ -1,11 +1,11 @@
 import { createContext, useContext, useState, useCallback, useMemo } from 'react';
 import type { ReactNode } from 'react';
-import type { Item, LeadItem, Category, Subcategory } from '../types';
+import type { BaseItem, LeadItem, Category, Subcategory } from '../types';
 import { getAllItems } from '../services';
 import { useLocalStorage } from '../hooks';
 
 interface AppState {
-  items: Item[];
+  items: BaseItem[];
   loading: boolean;
   error: string | null;
   searchQuery: string;
@@ -27,7 +27,7 @@ interface AppContextType extends AppState, AppActions { }
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
-  const [items, setItems] = useState<Item[]>([]);
+  const [items, setItems] = useState<BaseItem[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
