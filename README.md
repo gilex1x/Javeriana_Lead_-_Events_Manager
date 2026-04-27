@@ -27,7 +27,7 @@ Sigue estos pasos para instalar y levantar el entorno de desarrollo localmente:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/gilex1x/Javeriana_Lead_-_Events_Manager
    cd Javeriana_Lead_-_Events_Manager
    ```
 
