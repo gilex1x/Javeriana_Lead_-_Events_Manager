@@ -14,7 +14,7 @@ export interface LeadItem{
   id:number;
   nombre:string;
   email: `${string}@javeriana.edu.co`;
-  leadInterest?: Item[];
+  leadInterest?: BaseItem[];
 }
 
 export interface DatabaseSchema {

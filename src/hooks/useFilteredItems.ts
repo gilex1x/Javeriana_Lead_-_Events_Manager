@@ -1,13 +1,13 @@
 import { useMemo } from 'react';
-import type { Item, BaseItem, Category } from '../types';
+import type { BaseItem, Category } from '../types';
 
 export const useFilteredItems = (
-  items: Item[],
+  items: BaseItem[],
   categoryFilter: Category | '',
   searchQuery: string
 ): BaseItem[] => {
   return useMemo(() => {
-    let result = items.filter((item): item is BaseItem => 'categoria' in item);
+    let result = items;
 
     if (categoryFilter) {
       result = result.filter(item => item.categoria === categoryFilter);
